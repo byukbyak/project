@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+.main_container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.subtitle_section{
+    margin: 0 auto;
+}
+
+.subtitle_section p {
+    text-align: center;
+}
+
+.s1{
+    display: flex;
+    justify-content: center;
+}
+
+.s2{
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    margin: 10px;
+}
+
+.items img{
+    width: 250px;
+}
+
+.item_explain {
+    display: block;
+    padding: 0;
+}
+
+.item_explain li {
+    padding: 0;
+    margin: 0;
+}
+
+.item_name a{
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 2px;
+    color: black;
+    margin: 0;
+}
+
+.i_explain a{
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow: 2px;
+    color: rgb(59, 59, 59);
+    margin: 0;
+}
+
+.i_price {
+    text-align: right;
+}
+
+.i_price a{
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 2px;
+    color: black;
+}
+
+.page_number{
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+
+.p_no{
+    width: 100px;
+    border-radius: 50%;
+    padding: 10px 8px 4px 5px;
+    margin: 15px;
+    background-color: rgba(164, 192, 161, 0.603);
+}
+
+/* 아이템 상세페이지 */
+
+.item_content table {
+    align-content: center;
+    width: 1100px;
+}
+
+
+.item_content table tr, td{
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+}
+
+#item_content_name{
+    font-size: 30px;
+    height: 200px;
+    width: 600px;
+    padding: 0 0 0 20px;
+}
+
+#item_content_name a{
+    font-size: 15px;
+    color: rgb(114, 114, 114);
+}
+
+#item_content_name span{
+    font-size: 18px;
+    color: rgb(140, 140, 231);
+    border: 2px solid rgb(83, 83, 83);
+    padding: 12px 8px 6px 5px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#price{
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+}
+
+#ibtn input{
+    border: 0;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+}
+
+#ibtn{
+    margin-bottom: 50px;
+}

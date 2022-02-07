@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+li {
+	list-style: none;
+	margin: 0;
+	margin-right: 20px;
+	padding: 5px;
+	color: rgba(5, 37, 9, 0.747);
+}
+
+ul {
+	display: flex;
+	margin: 0;
+}
+
+a{
+	color: rgba(5, 37, 9, 0.747);
+}
+
+.foot{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.foot_top{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid rgb(171, 194, 171);
+}
+
+.foot_left{
+	position: absolute;
+	padding: 15px 0px 0px 0px;
+	margin-left: 20px;
+}
+
+.left_info{
+	margin-bottom: 0;
+}
+
+#copyright{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.foot_right{
+	padding: 0;
+}
+
+.right_support{
+	position: absolute;
+	text-align: right;
+	padding: 4px 10px 15px 0px;
+	right: 20em;
+	margin: 0;
+	color: rgba(5, 37, 9, 0.747);
+}
+.right_support h3{
+	margin-right: 22px;
+}
+
+.support_cont{
+	display: block;
+}
+
+.support_cont a{
+	text-decoration: none;
+}
+
+.right_cs{
+/* 	border: 3px solid pink; */
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: right;
+	padding: 4px 10px 15px 0px;
+	margin: 0;
+	color: rgba(5, 37, 9, 0.747);
+}
+
+#call{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.open_hours{
+	display: block;
+	margin-bottom: 0;
+}
+
+.open_hours li{
+	margin-right: 0;
+}
+
+.foot_bottom{
+	/* border: 3px solid blue; */
+	position: relative;
+	margin-top: 12em;
+}
+
+.bottom_menu{
+	padding: 5px 0 0 20px;
+	margin-left: 2.5em;
+}
+
+.bottom_menu li{
+	margin-right: 20px;
+}
+
+.bottom_menu a{
+	text-decoration: none;
+	color: rgba(1, 7, 1, 0.747);
+	font-weight: bold;
+}
+
+/* sns icons */
+.bottom_sns{
+	position: absolute;
+	right: 0.5em;
+	top:0.19em;
+}
+
+.bottom_sns li{
+	text-decoration: none;
+}
+
+.bottom_sns a{
+	color: rgba(5, 37, 9, 0.747);
+	width: 40px;
+}
+
+@media screen and (max-width: 907px){
+	/* 푸터 아이템 세로로 배치 */
+}

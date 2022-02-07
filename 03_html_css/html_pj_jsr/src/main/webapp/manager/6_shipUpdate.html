@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 반응형웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EveOnTea</title>
+<!-- CSS link -->
+<link rel="stylesheet" href="../resources/css/commonCSS/header.css">
+<link rel="stylesheet" href="../resources/css/commonCSS/footer.css">
+<link rel="stylesheet" href="../resources/css/commonCSS/main.css">
+<link rel="stylesheet" href="../resources/css/managerCSS/stock.css">
+<link rel="stylesheet" href="../resources/css/managerCSS/manager.css">
+<link rel="stylesheet" href="../resources/css/managerCSS/board.css">
+<!-- kit.fontawesome.com 인증 -->
+<script src="https://kit.fontawesome.com/20171669ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- defer : 모든 html 파일을 로딩할 때까지 html이 브라우저창에 표시가 안되는 것을 방지 -->
+<script src="../resources/js/customerJS/main.js" defer></script>
+
+<div class="header"><!-- 1.header 시작 -->
+	<nav class="global_navbar">
+		<div><!-- 1)로고 시작 -->
+			<a href="../common/00_main.html"><img width="300px" alt="logo" src="../resources/images/eve_logo.png" style="margin-right: 30px; margin-left: 30px"></a>
+		</div><!-- 1)로고 끝 -->
+		<div><!-- 2)글로벌메뉴바 시작 -->
+			<ul class="global_menu">
+				<li><a href="../customer/02_noticeList.html">공지사항</a></li>
+				<li><a href="../customer/03_faqList.html">FAQ</a></li>
+				<li><a href="../customer/04_shopAll.html">SHOP</a></li>
+				<li><a href="../customer/05_event.html">이벤트</a></li>
+				<li><a href="../customer/08_qnaList.html">Q&A</a></li>
+			</ul>
+		</div><!-- 2)글로벌메뉴바 끝 -->
+		<div><!-- 3)우상단 로고메뉴 시작 -->
+			<ul class="global_icons">
+				<li><a href="../customer/07_search.html"><i class="fas fa-search"></i></a></li>
+				<li><a onclick="mem_logout()"><i class="fas fa-user"></i></a></li>
+				<li><a href="../customer/08_cartList.html"><i class="fas fa-cart-plus"></i></a></li>
+			</ul>
+            <script>
+				function mem_logout(){
+					alert("로그아웃 되었습니다.");
+					location.href = "../common/00_main.html";
+				}
+			</script>
+		</div><!-- 3)우상단 로고메뉴 끝 -->
+		<!-- 반응형 웹 - 4. 햄버거 버튼 -->
+		<a href="#" class="navbar_toggleBtn">
+			<i class="fas fa-bars"></i>	<!-- 햄버거 -->
+		</a>
+	</nav>
+</div><!-- 1.header 끝 -->
+
+<div class="main_container"><!-- 2.메인컨텐츠 시작 -->
+	<div class="main_wrap">
+		<div class="title_section"> 배송정보 수정 </div>
+		<div class="bar"></div>
+		<nav id="manager_menu_box">
+			<ul class="manager_menu">
+				<li class="m_menu"><a href="./1_main_manager.html">재고목록</a></li>
+				<li><a href="./2_stockAdd.html">재고 추가</a></li>
+				<li><a href="./2_stockUpdate.html">재고 수정</a></li>
+				<li class="m_menu"><a href="./3_boardList.html">게시판관리</a></li>
+				<li><a href="./4_boardUpdate.html">게시물 추가</a></li>
+				<li class="m_menu"><a href="./5_shipList.html">배송목록</a></li>
+				<li><a href="./6_shipAdd.html">배송정보 등록</a></li>
+				<li><a href="./6_shipUpdate.html">배송정보 수정</a></li>
+				<li class="m_menu"><a href="./7_memberList.html">회원목록</a></li>
+				<li><a href="./8_memberUpdate.html">회원정보수정</a></li>
+			</ul>
+		</nav>
+        <div class="main_space">
+            <div class="board_Uptable">
+				<form action="#">
+					<table>
+						<tr>
+							<th> 택배사 </th>
+							<td>
+								<select name="delivery" id="delivery">택배사
+									<option value="롯데택배">롯데택배</option>
+									<option value="한진택배">한진택배</option>
+									<option value="로젠택배">로젠택배</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th> 결제상태 </th>
+							<td>
+								<select name="pay_state" id="pay_state">
+									<option value="결제대기">결제대기</option>
+									<option value="결제완료">결제완료</option>
+									<option value="환불요청">환불요청</option>
+									<option value="환불승인">환불승인</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th> 배송상태 </th>
+							<td>
+								<select name="d_state" id="d_state">
+									<option value="상품준비중">상품준비중</option>
+									<option value="상품집하완료">상품집하완료</option>
+									<option value="택배사도착">택배사도착</option>
+									<option value="배송중">배송중</option>
+									<option value="배송완료">배송완료</option>
+									<option value="반송신청">반송신청</option>
+									<option value="반송중">반송중</option>
+									<option value="반송완료">반송완료</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th> 운송장번호 </th>
+							<td>
+								<input type="text" class="input" name="category" size="80" placeholder="30자 이내로 작성">
+							</td>
+						</tr>
+						<tr>
+							<th> 배송지 </th>
+							<td>
+								<input type="text" class="input" name="category" size="80" placeholder="30자 이내로 작성">
+							</td>
+						</tr>
+						<tr>
+							<th> 수취인 </th>
+							<td>
+								<input type="text" class="input" name="category" size="80" placeholder="30자 이내로 작성">
+							</td>
+						</tr>
+						<tr>
+							<th> 연락처 </th>
+							<td>
+								<input type="text" class="input" name="category" size="80" placeholder="30자 이내로 작성">
+							</td>
+						</tr>
+						<tr id="btns">
+							<td colspan="2" style="text-align: right; padding-right: 30px;">
+								<input type="submit" value="수정">
+								<input type="reset" value="삭제">
+							</td>
+						</tr>
+					</table>
+				</form>
+            </div>
+        </div>
+	</div>
+</div><!-- 2.메인컨텐츠 끝 -->
+
+<div><!-- 3.footer 시작 -->
+	<div class="foot_top"><!-- 3-1.foot_top 시작 -->
+		<div class="foot_left"><!-- 3-2.foot_left 시작 -->
+			<ul><li><a href="../common/00_main.html"><img alt="text_logo" width="200px" src="../resources/images/eve_logo_text.png"></a></li></ul>
+			<ul>
+				<li><strong>주식회사</strong> 이브온티</li><li> / </li>
+				<li><strong>대표이사</strong> : 정미밍</li><li> / </li>
+				<li>서울 구로구 디지털로 165</li>
+			</ul>
+			<ul>
+				<li>사업자등록번호 : 111-22-33333</li>
+			</ul>
+			<ul class="left_info">
+				<li>통신판매업 신고번호 : 2022-서울구로동-8080</li>
+				<li> / </li>
+				<li>개인정보관리자 : 이미밍</li>
+			</ul>
+			<ul id="copyright">
+				<li>©EVEONTEA. ALL Rights Reserved.</li>
+			</ul>
+		</div><!-- 3-2.foot_left 끝 -->
+		
+		<div class="foot_right"><!-- 3-3.foot_right 시작 -->
+			<div class="right_support">
+				<h3>SUPPORT</h3>
+				<ul class="support_cont">
+					<li><a href="../customer/02_noticeList.html">공지사항</a></li>
+					<li><a href="../customer/03_faqList.html">FAQ</a></li>
+					<li><a href="../customer/08_qnaList.html">1:1문의</a></li>
+					<li><a href="../customer/08_orderList.html">주문배송조회</a></li>
+				</ul>
+			</div>
+			<div class="right_cs" align="right">
+				<h3>CONTACT</h3>
+				<strong id="call">070-1234-4567</strong>
+				<ul class="open_hours">
+					<li>평일 : 10:00 ~ 17:00</li>
+					<li>점심 : 12:00 ~ 13:00</li>
+					<li>마케인 및 B2B : eveontea@eot.com</li>
+				</ul>
+			</div>
+		</div><!-- 3-3.foot_right 끝 -->
+	</div><!-- 3-1.foot_top 끝 -->
+	<div class="foot_bottom"><!-- 3-4.foot_bottom 시작 -->
+		<ul class="bottom_menu">
+			<li><a href="#">브랜드스토리</a></li>
+			<li><a href="../common/02_terms.html">이용약관</a></li>
+			<li><a href="#">이용안내</a></li>
+			<li><a href="#">개인정보처리방침</a></li>
+		</ul>
+		<ul class="bottom_sns">
+			<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+	</div><!-- 3-4.foot_bottom 끝 -->
+</div><!-- 3.footer 끝 -->
+</body>
+</html>

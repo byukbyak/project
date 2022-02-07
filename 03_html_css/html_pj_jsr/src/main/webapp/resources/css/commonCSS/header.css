@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.header {
+	position: relative;
+	background: rgb(223, 235, 223);
+	padding: 10px;
+	display: flex;
+	align-content: space-between;
+}
+
+.header a {
+	color: rgb(11, 29, 15);
+	text-decoration: none;
+}
+
+.global_navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	height: auto;
+	margin-left: 2%;
+}
+
+/* 2)글로벌메뉴바 */
+.global_menu {
+	margin-left: 220px;
+	display: flex;
+	list-style: none;	/* 리스트 불릿 없앰*/
+	font-weight: bold;
+	font-size: 25px;
+	/* border: 5px solid pink; */
+}
+
+.global_menu ul {
+	display: flex;
+}
+
+.global_menu li {
+	margin-right: 0px;
+	margin-left: 60px;
+}
+
+/* 3)우상단 로고메뉴 */
+.global_icons {
+	display: flex;
+	position: absolute;
+	right: 0.2em;
+	top: 0.2em;
+}
+
+.global_icons ul {
+	display: flex;
+}
+.global_icons li{
+	margin-left: 20px;
+}
+
+.navbar_toggleBtn {
+   display: none; /*768px보다 작은 경우메나 팸버거 아이콘이 보이게 한다.*/
+   position: absolute;
+   right: 32px; /*오른쪽 32px 떨어진 곳에 배치*/
+   font-size: 24px;
+   color: rgb(11, 29, 15);
+}
+
+@media screen and (max-width: 1035px){
+	.global_navbar{
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 8px 24px;
+	}
+	.global_menu{
+		display: none;
+		flex-direction: column; /* 위에서 아래쪽으로 아이템 배치 */
+		align-items: center; /* 가운데로 와서 display *//* width: 100%를 안 준 상태에서 center를 주면 메뉴 자체 너비가 작으므로 작동을 안 함*/
+		width: 100%;
+	}
+	.global_menu li {
+		width: 100%;
+		text-align: center;
+	}
+	.global_icons {
+		display: none;
+	}
+	.navbar_toggleBtn{
+		display: block;
+	}
+	.global_menu.active, .global_icons.active {
+		display: flex;
+	}
+}

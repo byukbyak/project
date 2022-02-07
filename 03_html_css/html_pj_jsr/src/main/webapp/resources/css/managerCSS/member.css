@@ -1,0 +1,26 @@
+
+.member_table {
+    text-align: center;
+}
+
+.member_table table{
+    border-collapse: collapse;
+}
+
+.member_table table tr{
+    border-bottom: 1px solid rgb(80, 80, 80);
+    height: 50px;
+}
+
+.member_table table td, th {
+    border-right: 1px solid rgb(80, 80, 80);
+}
+
+.member_table table td:last-child {
+    border-right: none;
+}
+
+.member_table table th:last-child {
+    border-right: none;
+}
+

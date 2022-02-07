@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 반응형웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EveOnTea</title>
+<!-- CSS link -->
+<link rel="stylesheet" href="../resources/css/commonCSS/header.css">
+<link rel="stylesheet" href="../resources/css/commonCSS/footer.css">
+<link rel="stylesheet" href="../resources/css/commonCSS/main.css">
+<link rel="stylesheet" href="../resources/css/customerCSS/review.css">
+<!-- kit.fontawesome.com 인증 -->
+<script src="https://kit.fontawesome.com/20171669ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- defer : 모든 html 파일을 로딩할 때까지 html이 브라우저창에 표시가 안되는 것을 방지 -->
+<script src="../resources/js/customerJS/main.js" defer></script>
+<script type="text/javascript">
+    // alert창에 선택과일을 출력(단 "과일을 선택하세요." 항목이 아닐 때)
+    function select(){
+        // alert(document.myForm.fruit.value);
+    }
+</script>
+
+<div class="header"><!-- 1.header 시작 -->
+	<nav class="global_navbar">
+		<div><!-- 1)로고 시작 -->
+			<a href="../common/00_main.html"><img width="300px" alt="logo" src="../resources/images/eve_logo.png" style="margin-right: 30px; margin-left: 30px"></a>
+		</div><!-- 1)로고 끝 -->
+		<div><!-- 2)글로벌메뉴바 시작 -->
+			<ul class="global_menu">
+				<li><a href="./02_noticeList.html">공지사항</a></li>
+				<li><a href="./03_faqList.html">FAQ</a></li>
+				<li><a href="./04_shopAll.html">SHOP</a></li>
+				<li><a href="./05_event.html">이벤트</a></li>
+				<li><a href="./08_qnaList.html">Q&A</a></li>
+			</ul>
+		</div><!-- 2)글로벌메뉴바 끝 -->
+		<div><!-- 3)우상단 로고메뉴 시작 -->
+			<ul class="global_icons">
+				<li><a href="./07_search.html"><i class="fas fa-search"></i></a></li>
+				<li><a href="./08_mypage.html"><i class="fas fa-user"></i></a></li>
+				<li><a href="./08_cartList.html"><i class="fas fa-cart-plus"></i></a></li>
+			</ul>
+		</div><!-- 3)우상단 로고메뉴 끝 -->
+		<!-- 반응형 웹 - 4. 햄버거 버튼 -->
+		<a href="#" class="navbar_toggleBtn">
+			<i class="fas fa-bars"></i>	<!-- 햄버거 -->
+		</a>
+	</nav>
+</div><!-- 1.header 끝 -->
+
+<div class="main_container"><!-- 2.메인컨텐츠 시작 -->
+    <div class="review_container">
+		<div class="subtitle_section">
+			<p> REVIEW </p>
+			<div class="bar"></div>
+			<div class="review_category">
+				<a> <strong>평점순</strong> 리뷰 (450) </a> |
+				<a href="#"> 추천순 </a> |
+				<a href="#"> 최신순 </a>
+				<form name="myForm" action="onchange" method="post">
+                    <select name="ctgr" onchange="select();">
+                        <option value="">카테고리 선택</option>
+                        <option value="키트">키트</option>
+                        <option value="실론 시나몬">실론 시나몬</option>
+                        <option value="따뜻한 차">따뜻한 차</option>
+                        <option value="1L 콜드브루 티">1L 콜드브루 티</option>
+                        <option value="차 선물세트">차 선물세트</option>
+                    </select>
+                </form>
+			</div>
+            <div id="review_zone">
+                <table align="center" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th style="width: 150px;">번호</th>
+                            <th style="width: 180px;">카테고리</th>
+                            <th style="width: 600px;">리뷰</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td> [키트] </td>
+                            <td><strong> 선물도 하고 저도 마시고.. </strong><br>
+                                매일 매일 기분에 따라 골라마시는 행복을 느낄 수 있습니다. 다시 구매해요^*^<br>
+                                <img src="../resources/images/review1.jpg" alt="review1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td> [실론 시나몬] </td>
+                            <td><strong> 그냥 카페인없는 차를 마시고 싶었는데 </strong><br>
+                                인스타 정보보고 바로 주문했어요.
+                                배송문자 받고도 조금 지체되어서 배송받았지만, 상품에 완전 만족입니다.
+                                예쁜 오렌지박스에 설명서까지 엣지스럽게 ㅎ
+                                샘플로 차와 곁들일 것도 보내주셔셔 더 감동<br>
+                                세개씩 낱포장되어 방습제까지 넣어서 너무 좋아요.
+                                친구들이랑 나눠먹을 생각입니다.<br>
+                                <img src="../resources/images/review2.jpg" alt="review2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td> [1L 콜드브루 티] </td>
+                            <td><strong> 물많이 마셔야 좋은거 아는데 </strong><br>
+                                생수만 마시기 질리기도하고, 커피는 마시고싶은데 마시면 잠을못자서 시켰는데 향도 다양해서 너무 좋고, 병도 일반 보틀보다 큰용량이고, 그리고 병이 'made in korea'
+                                말모말모!! 너무 맘에 들어요!! 다 먹으면 또 시킬것같아요!!
+                                <img src="../resources/images/review3.jpg" alt="review3">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page_number">
+                <span class="p_no">1</span>
+            </div>
+		</div>
+
+    </div>
+</div><!-- 2.메인컨텐츠 끝 -->
+
+<div><!-- 3.footer 시작 -->
+    <div class="foot_top"><!-- 3-1.foot_top 시작 -->
+        <div class="foot_left"><!-- 3-2.foot_left 시작 -->
+            <ul><li><a href="../common/00_main.html"><img alt="text_logo" width="200px" src="../resources/images/eve_logo_text.png"></a></li></ul>
+            <ul>
+                <li><strong>주식회사</strong> 이브온티</li><li> / </li>
+                <li><strong>대표이사</strong> : 정미밍</li><li> / </li>
+                <li>서울 구로구 디지털로 165</li>
+            </ul>
+            <ul>
+                <li>사업자등록번호 : 111-22-33333</li>
+            </ul>
+            <ul class="left_info">
+                <li>통신판매업 신고번호 : 2022-서울구로동-8080</li>
+                <li> / </li>
+                <li>개인정보관리자 : 이미밍</li>
+            </ul>
+            <ul id="copyright">
+                <li>©EVEONTEA. ALL Rights Reserved.</li>
+            </ul>
+        </div><!-- 3-2.foot_left 끝 -->
+        
+        <div class="foot_right"><!-- 3-3.foot_right 시작 -->
+            <div class="right_support">
+                <h3>SUPPORT</h3>
+                <ul class="support_cont">
+                    <li><a href="./02_noticeList.html">공지사항</a></li>
+                    <li><a href="./03_faqList.html">FAQ</a></li>
+                    <li><a href="./08_qnaList.html">1:1문의</a></li>
+                    <li><a href="./08_orderList.html">주문배송조회</a></li>
+                </ul>
+            </div>
+            <div class="right_cs" align="right">
+                <h3>CONTACT</h3>
+                <strong id="call">070-1234-4567</strong>
+                <ul class="open_hours">
+                    <li>평일 : 10:00 ~ 17:00</li>
+                    <li>점심 : 12:00 ~ 13:00</li>
+                    <li>마케인 및 B2B : eveontea@eot.com</li>
+                </ul>
+            </div>
+        </div><!-- 3-3.foot_right 끝 -->
+    </div><!-- 3-1.foot_top 끝 -->
+    <div class="foot_bottom"><!-- 3-4.foot_bottom 시작 -->
+        <ul class="bottom_menu">
+            <li><a href="#">브랜드스토리</a></li>
+            <li><a href="../common/02_terms.html">이용약관</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <ul class="bottom_sns">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div><!-- 3-4.foot_bottom 끝 -->
+</div><!-- 3.footer 끝 -->
+</body>
+</html>

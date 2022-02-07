@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.stock_table table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18;
+}
+
+.stock_table table th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    font-size: 22px;
+    height: 50px;
+}
+
+.stock_table table a {
+    text-decoration: none;
+    color: rgb(31, 29, 29);
+}
+
+.stock_table table tr{
+    border-bottom: 1px solid rgba(110, 110, 110, 0.479) ;
+}
+
+.stock_table table td {
+    height: 50px;
+}
+
+.stock_table table td:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+.main_container{
+    display: flexbox;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.title_section {
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(190, 190, 190); */
+    width: 1100px;
+    height: 50px;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+}
+
+
+.manager_menu{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.manager_menu li{
+    margin: 0;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.manager_menu a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.m_menu {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main_space {
+    /* background-color: rgba(199, 199, 223, 0.699); */
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* bottom: 460px; */
+    padding: 1em 0 1em 0;
+    /* border-radius: 15px; */
+    font-size: 18px;
+    background-color: rgb(233, 227, 217);
+}
+
+.board_Uptable table{
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18;
+}
+
+.board_Uptable table th{
+    text-align: right;
+    position: relative;
+    top: 2px;
+    padding-right: 20px;
+}
+.board_Uptable table td{
+    text-align: left;
+}
+
+input, textarea {
+    padding: 5px;
+    border: 0;
+    font-size: 15px;
+    font-family: 'OTWelcomeRA';
+}
+
+#btns input{
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+}
+
+#btns2 input {
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+}
+
+.board_Uptable select {
+    border: 0;
+    width: 200px;
+    height: 25px;
+    margin: 5px 0 5px 0;
+    font-size: 15px;
+}
+
+select {
+    border: 0;
+    height: 30px;
+    width: 200px;
+    margin: 0 0 5px 0;
+}
+
+#m_table1 table{
+    width: 1000px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#m_table1 table th{
+    height: 30px;
+}
+#m_table1 table th a{
+    color: black;
+    font-size: 25px;
+}
+
+#m_table1 table tbody td {
+    height: 30px;
+    padding-top: 10px;
+}
+
+#m_table1 table tbody td:nth-child(2) {
+    text-align: left
+}
+
+#m_table1 table a{
+    color: black;
+    text-decoration: none;
+}
+
+/* #m_table1 table th, tr, td{
+    border-right: 1px solid black;
+} */

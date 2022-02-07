@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.join_container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	grid-column: auto;
+}
+
+#join_box{
+	width: auto;
+	height: auto;
+	background-color: rgba(203, 230, 199, 0.349);
+	justify-content: center;
+	align-items: center;
+	margin: 40px 10px;
+}

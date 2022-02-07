@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.myinfo_container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	grid-column: auto;
+}
+
+#myinfo_box{
+	background-color: rgba(209, 235, 219, 0.411);
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 460px;
+    padding: 1em 0 1em 0;
+    border-radius: 15px;
+    font-size: 18px;
+    flex-direction: column;
+
+}
+
+.question_table table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18;
+}
+
+.question_table table th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    font-size: 18px;
+    height: 30px;
+}
+
+.question_table table a {
+    text-decoration: none;
+    color: rgb(31, 29, 29);
+}
+
+.question_table table tr{
+    border-bottom: 1px solid rgba(110, 110, 110, 0.479) ;
+}
+
+.question_table table td {
+    height: 50px;
+}
+
+.question_table table td:nth-child(2) {
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+.question_table {
+    background-color: rgba(209, 235, 219, 0.411);
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 460px;
+    padding: 1em 0 1em 0;
+    border-radius: 15px;
+    font-size: 18px;
+    flex-direction: column;
+}
+
+.question_table select {
+    border: 0;
+    width: 200px;
+    height: 25px;
+    margin: 5px 0 5px 0;
+    font-size: 15px;
+}
+
+select {
+    border: 0;
+    height: 30px;
+    width: 200px;
+    margin: 0 0 5px 0;
+}
+
+input {
+    padding: 5px;
+    border: 0;
+    font-size: 15px;
+    font-family: 'OTWelcomeRA';
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+}
+
+textarea {
+    padding: 5px;
+    border: 0;
+    font-size: 15px;
+    font-family: 'OTWelcomeRA';
+    margin-top: 5px;
+}

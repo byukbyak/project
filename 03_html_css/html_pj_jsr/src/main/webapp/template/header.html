@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 반응형웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>header</title>
+<!-- CSS link -->
+<link rel="stylesheet" href="../resources/css/commonCSS/header.css">
+<!-- kit.fontawesome.com 인증 -->
+<script src="https://kit.fontawesome.com/20171669ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- defer : 모든 html 파일을 로딩할 때까지 html이 브라우저창에 표시가 안되는 것을 방지 -->
+<script src="../resources/js/customerJS/main.js" defer></script>
+
+<div class="header"><!-- 1.header 시작 -->
+	<nav class="global_navbar">
+		<div><!-- 1)로고 시작 -->
+			<a href="../common/00_main.html"><img width="300px" alt="logo" src="../resources/images/eve_logo.png" style="margin-right: 30px; margin-left: 30px"></a>
+		</div><!-- 1)로고 끝 -->
+		<div><!-- 2)글로벌메뉴바 시작 -->
+			<ul class="global_menu">
+				<li><a href="../customer/02_noticeList.html">공지사항</a></li>
+				<li><a href="../customer/03_faqList.html">FAQ</a></li>
+				<li><a href="../customer/04_shopAll.html">SHOP</a></li>
+				<li><a href="../customer/05_event.html">이벤트</a></li>
+				<li><a href="../customer/08_qnaList.html">Q&A</a></li>
+			</ul>
+		</div><!-- 2)글로벌메뉴바 끝 -->
+		<div><!-- 3)우상단 로고메뉴 시작 -->
+			<ul class="global_icons">
+				<li><a href="../customer/07_search.html"><i class="fas fa-search"></i></a></li>
+				<li><a href="../customer/08_mypage.html"><i class="fas fa-user"></i></a></li>
+				<li><a href="../customer/08_cartList.html"><i class="fas fa-cart-plus"></i></a></li>
+			</ul>
+		</div><!-- 3)우상단 로고메뉴 끝 -->
+		<!-- 반응형 웹 - 4. 햄버거 버튼 -->
+		<a href="#" class="navbar_toggleBtn">
+			<i class="fas fa-bars"></i>	<!-- 햄버거 -->
+		</a>
+	</nav>
+</div><!-- 1.header 끝 -->
+
+</body>
+</html>

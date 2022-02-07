@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.search_box{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(130, 167, 141);
+    opacity: 80%;
+    align-items: center;
+}
+
+#search{
+    width: 500px;
+    height: 1.5em;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.search_box a {
+    color: black;
+    margin: 0.3em 0 0 0.8em;
+}

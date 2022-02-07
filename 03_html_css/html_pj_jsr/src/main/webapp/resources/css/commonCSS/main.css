@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'OTWelcomeRA';
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	margin-right: 20px;
+	padding: 5px;
+	color: rgba(5, 37, 9, 0.747);
+}
+
+ul {
+	display: flex;
+}
+
+a{
+	color: rgba(5, 37, 9, 0.747);
+}
+
+
+.main_container {
+	display: flex;
+	justify-content: center;
+	flex-grow: inherit;
+	width: 100%;
+	height: auto;
+	background: white;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.main_slider{
+	display: flex;
+	justify-content: center;
+}
+
+/* 02_terms */
+#terms_box {
+	width: 1200px;
+	height: 1200px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-grow: inherit;
+	height: auto;
+	background: white;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.subtitle_section p {
+    /* text-align: left; */
+    padding: auto;
+    margin: 0 auto;
+    margin: 1em 0 0.2em 0.2em;
+    font-size: 25px;
+    color: rgb(21, 58, 21);
+}
+
+.bar {
+    border-bottom: 1px solid rgb(21, 58, 21);
+    width: 1100px;
+    height: 1px;
+    justify-self: center;
+    margin-bottom: 0.8em;
+    flex: 1;
+	align-self: center;
+}
+
+/* 03_information */
+
+
+/* 04_policy */
+
